@@ -20,8 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c0e0fd7-9a43-4260-b0aa-b876be8f49a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/fbs/server/Class2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +47,29 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fbs.Main" />
+      <module name="CAB302_GITHUB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fbs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -74,5 +95,36 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="306" y="249" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589970291446">
+      <screen x="0" y="23" width="1920" height="1128" />
+    </state>
+    <state x="306" y="249" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1128@0.23.1920.1128" timestamp="1589970291446" />
+    <state width="1878" height="313" key="GridCell.Tab.0.bottom" timestamp="1589970421577">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1589970421577" />
+    <state width="1878" height="313" key="GridCell.Tab.0.center" timestamp="1589970421576">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="313" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1589970421576" />
+    <state width="1878" height="313" key="GridCell.Tab.0.left" timestamp="1589970421576">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="313" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1589970421576" />
+    <state width="1878" height="313" key="GridCell.Tab.0.right" timestamp="1589970421577">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1878" height="313" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1589970421577" />
+    <state x="448" y="154" width="1309" height="837" key="SettingsEditor" timestamp="1589970410055">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="448" y="154" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1589970410055" />
+    <state x="448" y="168" width="1309" height="837" key="SettingsEditor/0.23.1920.1128@0.23.1920.1128" timestamp="1589959494560" />
+    <state x="470" y="222" key="new project wizard" timestamp="1589970401902">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="470" y="222" key="new project wizard/0.0.1920.1200@0.0.1920.1200" timestamp="1589970401902" />
   </component>
 </project>

@@ -5,7 +5,10 @@ package com.fbs.db;
 import java.sql.*;
 
 import static com.fbs.db.DBConnection.setInstanceToNull;
+import static com.fbs.db.DBDisplayContent.*;
 import static com.fbs.db.DBExecuteQuery.*;
+import static com.fbs.db.DBSetupQueries.*;
+import static com.fbs.db.DBSetupQueries.CREATE_TABLE_SCHEDULES;
 
 public class DBUsersTableQueries {
 

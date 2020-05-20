@@ -1,12 +1,12 @@
-package com.fbs;
+package com.CAB302;
 
-import com.fbs.db.DBCheckSchema;
-import com.fbs.db.DBPropsFileRead;
+import com.CAB302.db.DBCheckSchema;
+import com.CAB302.db.DBPropsFileRead;
 
 import java.sql.SQLException;
-import static com.fbs.db.DBCheckTables.checkTables;
-import static com.fbs.db.DBExecuteQuery.execute;
-import static com.fbs.db.DBSetupQueries.*;
+import static com.CAB302.db.DBCheckTables.checkTables;
+import static com.CAB302.db.DBExecuteQuery.execute;
+import static com.CAB302.db.DBSetupQueries.*;
 
 
 public class Main {

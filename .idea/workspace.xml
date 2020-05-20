@@ -20,7 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c0e0fd7-9a43-4260-b0aa-b876be8f49a4" name="Default Changelist" comment="">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/src/com/CAB302/controlPanel/Test3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/controlPanel/tets1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/controlPanel/tets1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBBillboardTableQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/db/DBBillboardTableQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBCheckSchema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/db/DBCheckSchema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBCheckTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/db/DBCheckTables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/db/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBDisplayContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/db/DBDisplayContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBExecuteQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/db/DBExecuteQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBPropsFileRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/db/DBPropsFileRead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBSetupQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/db/DBSetupQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBUsersTableQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/db/DBUsersTableQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/server/Class2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/server/Class2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/server/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/server/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/viwer/Viwer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/viwer/Viwer.java" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/com/fbs/viwer/naif.java" afterDir="false" />
+>>>>>>> e7e1685dfcb2e03e8f239b42167b253794da0e7b
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 0268a5d0a6a8570e47cd5a302ae2c9d9df4b32e6
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

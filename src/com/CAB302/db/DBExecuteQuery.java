@@ -1,9 +1,9 @@
-package com.fbs.db;
+package com.CAB302.db;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
-import static com.fbs.db.DBConnection.*;
+import static com.CAB302.db.DBConnection.*;
 
 public class DBExecuteQuery {
 

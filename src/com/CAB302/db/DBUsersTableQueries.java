@@ -1,14 +1,11 @@
-package com.fbs.db;
+package com.CAB302.db;
 
 
 
 import java.sql.*;
 
-import static com.fbs.db.DBConnection.setInstanceToNull;
-import static com.fbs.db.DBDisplayContent.*;
-import static com.fbs.db.DBExecuteQuery.*;
-import static com.fbs.db.DBSetupQueries.*;
-import static com.fbs.db.DBSetupQueries.CREATE_TABLE_SCHEDULES;
+import static com.CAB302.db.DBConnection.setInstanceToNull;
+import static com.CAB302.db.DBExecuteQuery.*;
 
 public class DBUsersTableQueries {
 

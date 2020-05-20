@@ -1,4 +1,4 @@
-package com.CAB302.db;
+package com.fbs.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

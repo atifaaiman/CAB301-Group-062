@@ -1,4 +1,4 @@
-package com.CAB302.db;
+package com.fbs.db;
 
 /**
  * @author Fernando Barbosa Silva

@@ -1,10 +1,10 @@
-package com.CAB302.db;
+package com.fbs.db;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import static com.CAB302.db.DBConnection.*;
+import static com.fbs.db.DBConnection.*;
 
 
 public class DBDisplayContent {

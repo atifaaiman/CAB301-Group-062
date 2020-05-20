@@ -1,13 +1,13 @@
-package com.CAB302.db;
+package com.fbs.db;
 
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import static com.CAB302.db.DBSetupQueries.*;
-import static com.CAB302.db.DBExecuteQuery.*;
-import static com.CAB302.db.DBConnection.*;
+import static com.fbs.db.DBSetupQueries.*;
+import static com.fbs.db.DBExecuteQuery.*;
+import static com.fbs.db.DBConnection.*;
 
 public class DBCheckTables {
 

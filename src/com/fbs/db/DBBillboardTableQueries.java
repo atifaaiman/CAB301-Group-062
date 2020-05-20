@@ -1,12 +1,12 @@
-package com.CAB302.db;
+package com.fbs.db;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import static com.CAB302.db.DBConnection.setInstanceToNull;
-import static com.CAB302.db.DBExecuteQuery.executeUpdate;
+import static com.fbs.db.DBConnection.setInstanceToNull;
+import static com.fbs.db.DBExecuteQuery.executeUpdate;
 
 public class DBBillboardTableQueries {
 

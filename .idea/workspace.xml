@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c0e0fd7-9a43-4260-b0aa-b876be8f49a4" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/com/CAB302/controlPanel/Test3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/fbs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/fbs/controlPanel/tets1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/controlPanel/tets1.java" afterDir="false" />
@@ -35,6 +36,10 @@
       <change beforePath="$PROJECT_DIR$/src/com/fbs/server/Class2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/server/Class2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/fbs/server/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/server/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/fbs/viwer/Viwer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/viwer/Viwer.java" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/com/fbs/viwer/naif.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 0268a5d0a6a8570e47cd5a302ae2c9d9df4b32e6
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

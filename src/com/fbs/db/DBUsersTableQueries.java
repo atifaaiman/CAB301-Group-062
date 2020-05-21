@@ -1,32 +1,36 @@
 package com.fbs.db;
 
-
+import com.fbs.general.User;
+import com.fbs.general.UserPermissions;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 import static com.fbs.db.DBConnection.setInstanceToNull;
-import static com.fbs.db.DBDisplayContent.*;
 import static com.fbs.db.DBExecuteQuery.*;
-import static com.fbs.db.DBSetupQueries.*;
-import static com.fbs.db.DBSetupQueries.CREATE_TABLE_SCHEDULES;
+
 
 public class DBUsersTableQueries {
 
     /**
      * @author Fernando Barbosa Silva
      * Add new user in the database
-     * @param array of strings : arrayExample => ["user_name", "password", "administrator", "create_billboards","edit_all_billboards", "schedule_billboards", "edit_users" ]
+     * @param user object with attributes ( user_name, password,administrator,create_billboards,
+     *             edit_all_billboards, schedule_billboards, edit_users)
      * @return returns 1 if user was added successfully, returns -1 if user already exists,
      * returns 0 if user was not added because of some error.
      */
-    public static int createUser(String [] array){
-        // Query to add user
+    public static int addUser(User user){
+
+        // Query to add user in the database
         String ADD_USER_QUERY = "INSERT INTO " +
                 "users  (       user_name              , password     ,   administrator  , create_billboards  , edit_all_billboards, schedule_billboards, edit_users)" +
-                "VALUES ('"+array[0].toLowerCase()+  "','"+array[1]+"','" + array[2] + "','" +  array[3]  + "','" +   array[4] + "','" +  array[5]  + "','"+array[6]+"')";
+                "VALUES ('"+user.getUser_name()+"','"+user.getPassword()+"','"+user.getAdministrator()+"','"+ user.getCreate_billboards() +"','"+
+                            user.getEdit_all_billboards()+ "','" +  user.getSchedule_billboard()  + "','"+user.getEdit_users()+"')";
 
         int result = 0;
-        if (userExists(array[0])) return -1;
+        if (userExists(user.getUser_name())) return -1;
         result =  executeUpdate(ADD_USER_QUERY);
         return result;
     }
@@ -58,7 +62,7 @@ public class DBUsersTableQueries {
     /**
      * @author Fernando Barbosa Silva
      * Delete user from the database
-     * @param user_name  strings, provide the user_name that need to be deleted
+     * @param user_name  strings, provide the user_name that need to be deleted from the database
      * @return returns 1 if user was deleted successfully, returns -1 if user does not exist in the database,
      * returns 0 if user was not deleted because of some error.
      */
@@ -113,20 +117,56 @@ public class DBUsersTableQueries {
         return false;
     }
 
+    /**
+     * @author Fernando Barbosa Silva
+     * Get list of  all user's permissions from the database.
+     * @return returns a List object with the permission of each user.
+     */
+    public static List getUserPermissionsList(){
+
+        // Query used for retrieving all users from the database
+        String query = "SELECT * FROM users";
+        List<UserPermissions> userList = new ArrayList();
+
+        List<UserPermissions> result = new ArrayList<>();
+        result = executeGetUserPermissions(query);
+        return result;
+    }
+
+    /**
+     * @author Fernando Barbosa Silva
+     * Get user's permissions from the database.
+     * @param user_name string.
+     * @return returns an object with the permission of  the user selected, if user does
+     * not exist it return an empty object.
+     */
+    public static List getUserPermissions(String user_name){
+
+        // Query used for retrieving all users from the database
+        String query = "SELECT * FROM users where user_name ='"+user_name+"'";
+
+        List<UserPermissions> result = new ArrayList<>();
+        result = executeGetUserPermissions(query);
+        return result;
+    }
+
 
     // Main class to validate the code
     public static void main(String[] Args){
-        String [] demoUser = {"FernAndo", "24353", "no", "no", "yes", "no", "yes"};
 
-        System.out.println(createUser(demoUser));
-        System.out.println(userExists("Fernando"));
-        System.out.println(deleteUser("FaBio"));
-        System.out.println(updateUser("fernando", "password", "silvaSILVA"));
-        System.out.println(updateUser("fernando", "administrator", "No"));
-        System.out.println(updateUser("fernando", "create_billboards", "nO"));
-        System.out.println(updateUser("fernando", "edit_all_billboards", "no"));
-        System.out.println(updateUser("fernando", "schedule_billboards", "no"));
-        System.out.println(updateUser("fernando", "edit_users", "NO"));
+        User fernando = new User("fernandobs", "1234", "yes","no", "no", "yes", "yes");
+
+        System.out.println(addUser(fernando));
+        List<User> list = getUserPermissionsList();
+        System.out.println(list.toString());
+        System.out.println(list.get(1));
+        List<UserPermissions> permissions = getUserPermissions("fernandobs");
+        System.out.println(permissions);
+        if(!permissions.isEmpty() ){
+            System.out.println("Test");
+            System.out.println(permissions.get(0).getUser_name());
+        }
+
 
 
     }

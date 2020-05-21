@@ -1,4 +1,4 @@
 package com.fbs.server;
 
-public class Test {
+public class Main {
 }

@@ -1,8 +1,11 @@
 package com.fbs.db;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
+import com.fbs.general.UserPermissions;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
 import static com.fbs.db.DBConnection.*;
 
 public class DBExecuteQuery {
@@ -76,4 +79,49 @@ public class DBExecuteQuery {
             System.out.println(e.getMessage());
         }
     }
+
+
+    /**
+     * @author Fernando Barbosa Silva
+     * Get user's permissions from the database.
+     * @return returns an object with the permission of  the users, returns an empty object if
+     * no users were found in the database.
+     * @throws SQLException if there is an error in the query or database connection.
+     */
+    public static List executeGetUserPermissions(String query){
+        List<UserPermissions> userList = new ArrayList<>();
+
+        try{
+            // get connection
+            Connection connection = DBConnection.getInstance();
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+
+            // Check each row of the table
+            while (resultSet.next()) {
+                String userName = resultSet.getString(2);
+                String administrator= resultSet.getString(4);
+                String createBillboards =  resultSet.getString(5);
+                String editAllBillboards = resultSet.getString(6);
+                String scheduleBillboards= resultSet.getString(7);
+                String editUsers = resultSet.getString(8);
+                UserPermissions userPermissions = new UserPermissions(userName,administrator,createBillboards,
+                        editAllBillboards, scheduleBillboards, editUsers);
+                userList.add(userPermissions);
+            }
+
+            statement.close();
+            connection.close();
+            setInstanceToNull();
+            return userList;
+        }
+        catch (SQLException e){
+            System.out.println(e.getMessage());
+        }
+        return userList;
+    }
+
+
+
+
 }

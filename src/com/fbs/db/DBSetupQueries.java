@@ -29,7 +29,7 @@ public abstract class DBSetupQueries {
             "   billboard_id                INT NOT NULL AUTO_INCREMENT," +
             "   billboard_name              VARCHAR (255) NOT NULL UNIQUE," +
             "   xml                         VARCHAR (1000) NOT NULL," +
-            "   create_by                   VARCHAR (255) NOT NULL," +
+            "   created_by                   VARCHAR (255) NOT NULL," +
             "   create_date                 DATETIME NOT NULL DEFAULT ( CURRENT_TIMESTAMP() )," +
             "   PRIMARY KEY (billboard_id))";
 

@@ -53,7 +53,6 @@ public class DBDisplayContent {
         catch (Exception e){
             System.out.println(e.getMessage());
         }
-
     }
 
 }

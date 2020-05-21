@@ -20,29 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c0e0fd7-9a43-4260-b0aa-b876be8f49a4" name="Default Changelist" comment="">
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/src/com/CAB302/controlPanel/Test3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/controlPanel/tets1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/controlPanel/tets1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBBillboardTableQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/db/DBBillboardTableQueries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBCheckSchema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/db/DBCheckSchema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBCheckTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/db/DBCheckTables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/db/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBDisplayContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/db/DBDisplayContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBExecuteQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/db/DBExecuteQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBPropsFileRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/db/DBPropsFileRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBSetupQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/db/DBSetupQueries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBUsersTableQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/db/DBUsersTableQueries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/server/Class2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/server/Class2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/server/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/server/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/viwer/Viwer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CAB302/viwer/Viwer.java" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/src/com/fbs/viwer/naif.java" afterDir="false" />
->>>>>>> e7e1685dfcb2e03e8f239b42167b253794da0e7b
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fbs/general/Billboards.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fbs/general/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fbs/general/UserPermissions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/fbs/general/Xml.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
->>>>>>> 0268a5d0a6a8570e47cd5a302ae2c9d9df4b32e6
+      <change beforePath="$PROJECT_DIR$/CAB302_GITHUB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CAB302_GITHUB.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fbs/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/controlPanel/tets1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fbs/controlPanel/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBCheckSchema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fbs/db/DBCheckSchema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBDisplayContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fbs/db/DBDisplayContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBExecuteQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fbs/db/DBExecuteQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBPropsFileRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fbs/db/DBPropsFileRead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBSetupQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fbs/db/DBSetupQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBUsersTableQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fbs/db/DBUsersTableQueries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/server/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fbs/server/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/fbs/viwer/Viwer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fbs/viwer/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,12 +62,27 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="inlay.hints.JAVA" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.DBUsersTableQueries">
+    <configuration name="DBUsersTableQueries" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.fbs.db.DBUsersTableQueries" />
+      <module name="CAB302_GITHUB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fbs.general.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fbs.Main" />
       <module name="CAB302_GITHUB" />
@@ -89,6 +98,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DBUsersTableQueries" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -123,30 +133,43 @@
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
     <state x="306" y="249" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1128@0.23.1920.1128" timestamp="1589970291446" />
-    <state width="1878" height="313" key="GridCell.Tab.0.bottom" timestamp="1589970421577">
+    <state x="2069" y="546" key="#com.intellij.ide.util.MemberChooser" timestamp="1590012817950">
+      <screen x="0" y="23" width="3008" height="1620" />
+    </state>
+    <state x="2069" y="546" key="#com.intellij.ide.util.MemberChooser/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590012817950" />
+    <state x="698" y="334" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1589973666094">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1589970421577" />
-    <state width="1878" height="313" key="GridCell.Tab.0.center" timestamp="1589970421576">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state x="698" y="334" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1589973666094" />
+    <state width="1961" height="344" key="GridCell.Tab.0.bottom" timestamp="1590022388713">
+      <screen x="0" y="23" width="3008" height="1620" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1589970421576" />
-    <state width="1878" height="313" key="GridCell.Tab.0.left" timestamp="1589970421576">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1878" height="344" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1589973882916" />
+    <state width="1961" height="344" key="GridCell.Tab.0.bottom/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590022388713" />
+    <state width="1961" height="344" key="GridCell.Tab.0.center" timestamp="1590022388712">
+      <screen x="0" y="23" width="3008" height="1620" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1589970421576" />
-    <state width="1878" height="313" key="GridCell.Tab.0.right" timestamp="1589970421577">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1878" height="344" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1589973882914" />
+    <state width="1961" height="344" key="GridCell.Tab.0.center/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590022388712" />
+    <state width="1961" height="344" key="GridCell.Tab.0.left" timestamp="1590022388711">
+      <screen x="0" y="23" width="3008" height="1620" />
     </state>
-    <state width="1878" height="313" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1589970421577" />
-    <state x="448" y="154" width="1309" height="837" key="SettingsEditor" timestamp="1589970410055">
-      <screen x="0" y="0" width="1920" height="1200" />
+    <state width="1878" height="344" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1589973882913" />
+    <state width="1961" height="344" key="GridCell.Tab.0.left/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590022388711" />
+    <state width="1961" height="344" key="GridCell.Tab.0.right" timestamp="1590022388712">
+      <screen x="0" y="23" width="3008" height="1620" />
     </state>
-    <state x="448" y="154" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1589970410055" />
+    <state width="1878" height="344" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1589973882915" />
+    <state width="1961" height="344" key="GridCell.Tab.0.right/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590022388712" />
+    <state x="1172" y="523" width="1309" height="837" key="SettingsEditor" timestamp="1590010386701">
+      <screen x="0" y="23" width="3008" height="1620" />
+    </state>
+    <state x="448" y="154" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1589973667897" />
     <state x="448" y="168" width="1309" height="837" key="SettingsEditor/0.23.1920.1128@0.23.1920.1128" timestamp="1589959494560" />
-    <state x="470" y="222" key="new project wizard" timestamp="1589970401902">
+    <state x="1172" y="523" key="SettingsEditor/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590010386701" />
+    <state x="470" y="222" key="new project wizard" timestamp="1589973654957">
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
-    <state x="470" y="222" key="new project wizard/0.0.1920.1200@0.0.1920.1200" timestamp="1589970401902" />
+    <state x="470" y="222" key="new project wizard/0.0.1920.1200@0.0.1920.1200" timestamp="1589973654957" />
   </component>
 </project>

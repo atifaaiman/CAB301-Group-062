@@ -3,11 +3,9 @@ package com.fbs.db;
 import com.fbs.general.User;
 import com.fbs.general.UserPermissions;
 
-import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.fbs.db.DBConnection.setInstanceToNull;
 import static com.fbs.db.DBExecuteQuery.*;
 
 
@@ -30,7 +28,7 @@ public class DBUsersTableQueries {
                             user.getEdit_all_billboards()+ "','" +  user.getSchedule_billboard()  + "','"+user.getEdit_users()+"')";
 
         int result = 0;
-        if (userExists(user.getUser_name())) return -1;
+        if (executeUserExists(user.getUser_name())) return -1;
         result =  executeUpdate(ADD_USER_QUERY);
         return result;
     }
@@ -44,7 +42,7 @@ public class DBUsersTableQueries {
      * @param newValue  strings, provide the new value for the column that need to be updated.
      * values for user permission,administrator,create_billboards,edit_all_billboards,schedule_billboards,edit_users,
      * must be 'no' or 'yes', no other value is valid in the user table
-     * @return returns 1 if user was deleted successfully, returns -1 if user does not exist,
+     * @return returns 1 if user was updated successfully, returns -1 if user does not exist,
      * returns 0 if user was not updated because of some error.
      */
     public static int updateUser(String user_name, String columnName, String newValue){
@@ -54,7 +52,7 @@ public class DBUsersTableQueries {
                 user_name.toLowerCase() +"'";
 
         int result = 0;
-        if (!userExists(user_name)) return -1;
+        if (!executeUserExists(user_name)) return -1;
         result = executeUpdate(update);
         return result;
     }
@@ -72,49 +70,9 @@ public class DBUsersTableQueries {
         String deleteQuery = "DELETE FROM users WHERE user_name ='"+ user_name.toLowerCase() + "'";
 
         int result = 0;
-        if (!userExists(user_name)) return -1;
+        if (!executeUserExists(user_name)) return -1;
         result = executeUpdate(deleteQuery);
         return  result;
-    }
-
-    /**
-     * @author Fernando Barbosa Silva
-     * Check if a user is in the database.
-     * @param user_name  strings, provide the user_name that need to be checked.
-     * @return returns 1 if user exist in the database, returns 0 if user does not exist.
-     * @throws SQLException if there is an error in the query or database connection.
-     */
-    public static boolean userExists(String user_name){
-
-        // Query used for retrieving all users from the database
-        String query = "SELECT user_name FROM users";
-
-        try{
-            // get connection
-            Connection connection = DBConnection.getInstance();
-            Statement st = connection.createStatement();
-            ResultSet rs = st.executeQuery(query);
-
-            // Check each row
-            while (rs.next()) {
-                String user = rs.getString(1);
-                //System.out.println( user);
-                if (user.equals(user_name.toLowerCase())) {
-                    st.close();
-                    connection.close();
-                    setInstanceToNull();
-                    return true;
-                }
-            }
-            st.close();
-            connection.close();
-            setInstanceToNull();
-            return false;
-        }
-        catch (SQLException e){
-            System.out.println(e.getMessage());
-        }
-        return false;
     }
 
     /**

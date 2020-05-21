@@ -1,30 +1,38 @@
 package com.fbs.db;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import com.fbs.general.Billboard;
+import com.fbs.general.UserPermissions;
 
-import static com.fbs.db.DBConnection.setInstanceToNull;
-import static com.fbs.db.DBExecuteQuery.executeUpdate;
+import javax.xml.crypto.Data;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import static com.fbs.db.DBExecuteQuery.*;
 
 public class DBBillboardTableQueries {
 
     /**
      * @author Fernando Barbosa Silva
      * Add new user in the database
-     * @param array of strings : arrayExample => ["billboard_name", "xml", "create_by"]
+     * @param billboard object with the attributes (billboard_name, xml, create_by)
      * @return returns 1 if billboard was added successfully, return -1 if billboard_name
      * already exist in the database, returns 0 if billboard was not added because of some error.
      */
-    public static int addBillboard(String [] array){
+    public static int addBillboard(Billboard billboard){
         // Query to add billboard
         String ADD_BILLBOARD_QUERY = "INSERT INTO " +
-                "billboards  (       billboard_name    ,      xml       ,         create_by      )" +
-                "VALUES ('"+array[0].toLowerCase()+  "','"+ array[1] +"','" + array[2].toLowerCase() + "')";
+                "billboards  (billboard_name,background_colour,message_colour,message,picture_type,picture_data,information_colour, information ,created_by)" +
+                "VALUES ('"+billboard.getBillboard_name().toLowerCase()+ "','"+ billboard.getBackground_colour()+"','"+billboard.getMessage_colour()+ "'," +
+                "'"+billboard.getMessage().replace("'", "''")+"','"+billboard.getPicture_type()+
+                "','"+billboard.getPicture_data()+ "','"+billboard.getInformation_colour()+
+                "','"+billboard.getInformation().replace("'", "''")+ "','"+billboard.getCreated_by()+"')";
 
         int result = 0;
-        if( billboardExists(array[0])) return -1;
+        if( DBExecuteQuery.executeBillboardExists(billboard.getBillboard_name())) return -1;
         result =  executeUpdate(ADD_BILLBOARD_QUERY);
         return result;
     }
@@ -46,7 +54,7 @@ public class DBBillboardTableQueries {
                 billboard_name.toLowerCase() +"'";
 
         int result = 0;
-        if (!billboardExists(billboard_name)) return -1;
+        if (!DBExecuteQuery.executeBillboardExists(billboard_name)) return -1;
         result = executeUpdate(update);
         return result;
     }
@@ -64,106 +72,78 @@ public class DBBillboardTableQueries {
         String deleteQuery = "DELETE FROM billboards WHERE billboard_name ='"+ billboard_name.toLowerCase() + "'";
 
         int result = 0;
-        if (!billboardExists(billboard_name)) return -1;
+        if (!DBExecuteQuery.executeBillboardExists(billboard_name)) return -1;
         result = executeUpdate(deleteQuery);
         return  result;
     }
 
+
     /**
      * @author Fernando Barbosa Silva
-     * Check if a billboard is in the database using the unique billboard_name.
-     * @param billboard_name  strings, provide the user_name that need to be checked.
-     * @return returns 1 if billboard_name exist in the database, returns 0 if it does not exist.
-     * @throws SQLException if there is an error in the query or database connection.
+     * Get list of  all billboards from the database.
+     * @return returns a List object with all billboards.
      */
-    public static boolean billboardExists(String billboard_name){
+    public static List getBillboardList(){
 
-        // Query used for retrieving all billboards from the database
-        String query = "SELECT billboard_name FROM billboards";
+        // Query used for retrieving all users from the database
+        String query = "SELECT * FROM billboards";
+        List<UserPermissions> billboardList = new ArrayList();
 
-        try{
-            // get connection
-            Connection connection = DBConnection.getInstance();
-            Statement st = connection.createStatement();
-            ResultSet rs = st.executeQuery(query);
-
-            // Check each row
-            while (rs.next()) {
-                String billboard = rs.getString(1);
-                if (billboard.equals(billboard_name.toLowerCase())) {
-                    st.close();
-                    connection.close();
-                    setInstanceToNull();
-                    return true;
-                }
-            }
-            st.close();
-            connection.close();
-            setInstanceToNull();
-            return false;
-        }
-        catch (SQLException e){
-            System.out.println(e.getMessage());
-        }
-        return false;
+        List<UserPermissions> result = new ArrayList<>();
+        result = executeGetBillboard(query);
+        return result;
     }
 
     /**
      * @author Fernando Barbosa Silva
-     * Check if a billboard is in the database using the unique billboard_name.
-     * @param xmlValues strings array, provide the information to be inserted in the xml.
-     * xmlArrayTemplate => {"backgroundColour","messageColour", "message", "pictureType",
-     *                  "pictureData", "informationColour", "information" };
-     * @return returns xml string with all information used by the billboard applications.
+     * Get a billboard from the database.
+     * @param billboard_name string.
+     * @return returns an object of the billboard selected, if billboard does
+     * not exist it return an empty object.
      */
-    public static String createXmlString(String [] xmlValues) {
+    public static List getBillboard(String billboard_name){
 
-        String backgroundColour = xmlValues[0];
-        String messageColour = xmlValues[1];
-        String message = xmlValues[2].replace("'", "''");
-        String pictureType = xmlValues[3];
-        String pictureData = xmlValues[4];
-        String informationColour = xmlValues[5];
-        String information = xmlValues[6];
+        // Query used for retrieving all users from the database
+        String query = "SELECT * FROM billboard where billbooard_name='"+billboard_name+"'";
 
-        String xml = "<?xml version=\"1.0\" encoding =\"UTF-8\"?>\n" +
-                "<billboard background=\""+ backgroundColour + "\">\n" +
-                "<message colour=\""+ messageColour + "\">" + message + "</message>\n" +
-                "<picture \""+pictureType+"\"=\""+ pictureData +"\" />\n" +
-                "<information colour=\""+ informationColour +"\">" + information + "</information>\n" +
-                "</billboard>";
-
-        return xml;
+        List<UserPermissions> result = new ArrayList<>();
+        result = executeGetBillboard(query);
+        return result;
     }
-
 
     // Main class to validate the code
     public static void main(String[] Args){
 
-        String [] xmlFormat = {"#0000FF","#FFFF00","Welcome to the _____ Corporation's Annual Fundraiser!", "url",
-                "https://example.com/fundraiser_image.jpg", "#00FFF",
-                "Be sure to check out https://example.com/ for more information."};
 
-        String [] xmlFormat_2 = {"#0000FF","#FFFF00","Test", "url",
-                "test", "#00FFF", "Be sure to check out https://example.com/ for more information."};
 
-        String xml = createXmlString(xmlFormat);
-        System.out.println(xml);
-
-        boolean test = billboardExists("billboard_01");
+        boolean test = DBExecuteQuery.executeBillboardExists("TesT_01");
         System.out.println(test);
 
-        String [] billboardData = {"billboard_01", xml, "Fernando"};
-        System.out.println("Add billboard status: " + addBillboard(billboardData));
+        Billboard billboard = new Billboard("Test_01","#0000FF","#FFFF00",
+                "Welcome to the _____ Corporation's Annual Fundraiser!", "url",
+                "https://example.com/fundraiser_image.jpg", "#00FFF",
+                "Be sure to check out https://example.com/ for more information.","fernandobs");
+        System.out.println("Add billboard status: " + addBillboard(billboard));
 
-        String newXML = createXmlString(xmlFormat_2);
+        LocalDateTime localDate = LocalDateTime.now();
+        System.out.println(localDate);
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("YYYY-MM-dd");
+        System.out.println(dtf.format(localDate));
 
-        System.out.println( "Update billboard status: "+ updateBillboard("billboard_05","xml",newXML));
 
-        System.out.println("Delete billboard status: " + deleteBillboard("billboard_01"));
 
-        String [] billboard = {"billboard_02", newXML, "fernando"};
-        System.out.println("Add billboard Status: " + addBillboard(billboard));
+        //String newXML = Xml.createXmlString(xmlFormat_2);
+
+        //System.out.println( "Update billboard status: "+ updateBillboard("billboard_05","xml",newXML));
+
+       // System.out.println("Delete billboard status: " + deleteBillboard("billboard_01"));
+
+       //Billboard billboard = new Billboard("billboard_02", newXML, "fernando");
+       //System.out.println("Add billboard Status: " + addBillboard(billboard));
+
+    List<Billboard> list = getBillboardList();
+    System.out.println(list.get(0).getCreated_by());
+
 
     }
 

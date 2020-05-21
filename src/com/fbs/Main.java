@@ -15,9 +15,9 @@ public class Main {
         // Get information from db.props file
         DBPropsFileRead DBProps = new DBPropsFileRead();
 
-        //execute(DELETE_TABLE_USERS);
-        //execute(DELETE_TABLE_BILLBOARDS);
-        //execute(DELETE_TABLE_SCHEDULES);
+        execute(DELETE_TABLE_USERS);
+        execute(DELETE_TABLE_BILLBOARDS);
+        execute(DELETE_TABLE_SCHEDULES);
 
         // Check it database exists
         if (DBCheckSchema.checkDatabase(DBProps.getSchema())){

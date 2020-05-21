@@ -28,10 +28,17 @@ public abstract class DBSetupQueries {
     public static final String CREATE_TABLE_BILLBOARDS = "CREATE TABLE billboards ( " +
             "   billboard_id                INT NOT NULL AUTO_INCREMENT," +
             "   billboard_name              VARCHAR (255) NOT NULL UNIQUE," +
-            "   xml                         VARCHAR (1000) NOT NULL," +
-            "   created_by                   VARCHAR (255) NOT NULL," +
+            "   background_colour           VARCHAR (14)," +
+            "   message_colour              VARCHAR (14)," +
+            "   message                     VARCHAR (500)," +
+            "   picture_type                ENUM('url', 'data'),"+
+            "   picture_data                VARCHAR (1000)," +
+            "   information_colour          VARCHAR (14)," +
+            "   information                 VARCHAR (500)," +
+            "   created_by                  VARCHAR (255) NOT NULL," +
             "   create_date                 DATETIME NOT NULL DEFAULT ( CURRENT_TIMESTAMP() )," +
             "   PRIMARY KEY (billboard_id))";
+
 
     /**
      * @author Fernando Barbosa Silva
@@ -39,22 +46,11 @@ public abstract class DBSetupQueries {
      */
     public static final String CREATE_TABLE_SCHEDULES = "CREATE TABLE schedules (" +
             "   schedule_id                 INT NOT NULL AUTO_INCREMENT," +
-            "   billboard_id                INT NOT NULL," +
             "   billboard_name              VARCHAR (255) NOT NULL," +
-            "   week_day                    ENUM('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday')," +
-            "   week_day_recurrent          ENUM('No', 'Yes') DEFAULT 'No' NOT NULL," +
-            "   billboard_presented_count   INT DEFAULT 0 NOT NULL,"  +
-            "   every_day                   ENUM('No', 'Yes') DEFAULT 'No' NOT NULL," +
-            "   every_hour                  ENUM('No', 'Yes') DEFAULT 'No' NOT NULL," +
-            "   every_minutes               ENUM('No', 'Yes') DEFAULT 'No' NOT NULL," +
-            "   frequency_minutes           INT," +
-            "   hour_start                  INT NOT NULL," +
-            "   minute_star                 INT NOT NULL," +
-            "   hour_finish                 INT NOT NULL," +
-            "   minute_finish               INT NOT NULL," +
-            "   duration                    INT NOT NULL," +
+            "   date_time_start             DATETIME NOT NULL," +
+            "   date_time_finish            DATETIME NOT NULL," +
             "   schedule_create_by          VARCHAR (255) NOT NULL," +
-            "   schedule_create_date        DATETIME NOT NULL DEFAULT ( CURRENT_TIMESTAMP() )," +
+            "   schedule_create_date        DATETIME NOT NULL DEFAULT ( CURRENT_TIMESTAMP() ),"+
             "   PRIMARY KEY (schedule_id ))";
 
     /**

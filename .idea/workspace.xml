@@ -19,25 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c0e0fd7-9a43-4260-b0aa-b876be8f49a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAB302_GITHUB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CAB302_GITHUB.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBBillboardTableQueries.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBBillboardTableQueries.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBDisplayContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBDisplayContent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBExecuteQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBExecuteQuery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBScheduleTableQueries.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBScheduleTableQueries.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBUsersTableQueries.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBUsersTableQueries.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fbs/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBBillboardTableQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fbs/db/DBBillboardTableQueries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBCheckTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fbs/db/DBCheckTables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fbs/db/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBDisplayContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fbs/db/DBDisplayContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBExecuteQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fbs/db/DBExecuteQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBScheduleTableQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fbs/db/DBScheduleTableQueries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBUsersTableQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/fbs/db/DBUsersTableQueries.java" afterDir="false" />
-    </list>
+    <list default="true" id="0c0e0fd7-9a43-4260-b0aa-b876be8f49a4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -201,30 +183,30 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="698" y="334" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1589973666094" />
-    <state width="1916" height="326" key="GridCell.Tab.0.bottom" timestamp="1590120559111">
+    <state width="1916" height="326" key="GridCell.Tab.0.bottom" timestamp="1590128463882">
       <screen x="0" y="23" width="3008" height="1620" />
     </state>
     <state width="1878" height="344" key="GridCell.Tab.0.bottom/0.0.1920.1200@0.0.1920.1200" timestamp="1589973882916" />
     <state width="2966" height="332" key="GridCell.Tab.0.bottom/0.0.3008.1692/3008.888.1920.1200@0.0.3008.1692" timestamp="1590061465418" />
-    <state width="1916" height="326" key="GridCell.Tab.0.bottom/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590120559110" />
-    <state width="1916" height="326" key="GridCell.Tab.0.center" timestamp="1590120559109">
+    <state width="1916" height="326" key="GridCell.Tab.0.bottom/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590128463882" />
+    <state width="1916" height="326" key="GridCell.Tab.0.center" timestamp="1590128463881">
       <screen x="0" y="23" width="3008" height="1620" />
     </state>
     <state width="1878" height="344" key="GridCell.Tab.0.center/0.0.1920.1200@0.0.1920.1200" timestamp="1589973882914" />
     <state width="2966" height="332" key="GridCell.Tab.0.center/0.0.3008.1692/3008.888.1920.1200@0.0.3008.1692" timestamp="1590061465417" />
-    <state width="1916" height="326" key="GridCell.Tab.0.center/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590120559109" />
-    <state width="1916" height="326" key="GridCell.Tab.0.left" timestamp="1590120559109">
+    <state width="1916" height="326" key="GridCell.Tab.0.center/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590128463881" />
+    <state width="1916" height="326" key="GridCell.Tab.0.left" timestamp="1590128463881">
       <screen x="0" y="23" width="3008" height="1620" />
     </state>
     <state width="1878" height="344" key="GridCell.Tab.0.left/0.0.1920.1200@0.0.1920.1200" timestamp="1589973882913" />
     <state width="2966" height="332" key="GridCell.Tab.0.left/0.0.3008.1692/3008.888.1920.1200@0.0.3008.1692" timestamp="1590061465416" />
-    <state width="1916" height="326" key="GridCell.Tab.0.left/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590120559109" />
-    <state width="1916" height="326" key="GridCell.Tab.0.right" timestamp="1590120559110">
+    <state width="1916" height="326" key="GridCell.Tab.0.left/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590128463881" />
+    <state width="1916" height="326" key="GridCell.Tab.0.right" timestamp="1590128463881">
       <screen x="0" y="23" width="3008" height="1620" />
     </state>
     <state width="1878" height="344" key="GridCell.Tab.0.right/0.0.1920.1200@0.0.1920.1200" timestamp="1589973882915" />
     <state width="2966" height="332" key="GridCell.Tab.0.right/0.0.3008.1692/3008.888.1920.1200@0.0.3008.1692" timestamp="1590061465418" />
-    <state width="1916" height="326" key="GridCell.Tab.0.right/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590120559110" />
+    <state width="1916" height="326" key="GridCell.Tab.0.right/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590128463881" />
     <state x="1172" y="523" width="1309" height="837" key="SettingsEditor" timestamp="1590010386701">
       <screen x="0" y="23" width="3008" height="1620" />
     </state>

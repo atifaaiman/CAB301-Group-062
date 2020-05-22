@@ -55,4 +55,8 @@ public class DBDisplayContent {
         }
     }
 
+    static public void main (String [] Args){
+        displayContents("Select * from billboards");
+    }
+
 }

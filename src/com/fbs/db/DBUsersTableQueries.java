@@ -29,8 +29,12 @@ public class DBUsersTableQueries {
 
         int result = 0;
         if (executeUserExists(user.getUser_name())) return -1;
-        result =  executeUpdate(ADD_USER_QUERY);
-        return result;
+        try{
+            result =  executeUpdate(ADD_USER_QUERY);
+            return result;
+        }catch (Exception e){
+            return result;
+        }
     }
 
     /**
@@ -112,18 +116,22 @@ public class DBUsersTableQueries {
     // Main class to validate the code
     public static void main(String[] Args){
 
-        User fernando = new User("fernandobs", "1234", "yes","no", "no", "yes", "yes");
+        User fernando = new User("fernandobs03", "1234", "yes","no", "no", "yes", "yes");
 
-        System.out.println(addUser(fernando));
+        System.out.println("Add user return status: " + addUser(fernando));
+        /*
         List<User> list = getUserPermissionsList();
         System.out.println(list.toString());
         System.out.println(list.get(1));
         List<UserPermissions> permissions = getUserPermissions("fernandobs");
         System.out.println(permissions);
         if(!permissions.isEmpty() ){
-            System.out.println("Test");
             System.out.println(permissions.get(0).getUser_name());
         }
+
+         */
+
+
 
 
 

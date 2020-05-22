@@ -19,6 +19,7 @@ public class DBConnection {
 
     /**
      * @author Fernando Barbosa Silva
+     * Material from lecture 7 Database
      * Create a connection to the database using the parameters specified in the
      * 'db.props' file.
      * @throws SQLException if the connection to the database fails.
@@ -29,7 +30,9 @@ public class DBConnection {
             instance = DriverManager.getConnection(url + "/" + schema,
                     username, password);
         } catch (SQLException e) {
-            System.out.println(e);
+            System.out.println("Connection Error. Please check the 'db.props' file configuration " +
+                    "and the database connection configuration.");
+            System.out.println(e.getMessage());
         }
     }
 

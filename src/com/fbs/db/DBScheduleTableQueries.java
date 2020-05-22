@@ -27,7 +27,6 @@ public class DBScheduleTableQueries {
                 "schedules  (billboard_name, date_time_start, date_time_finish, schedule_create_by)"+
                 "VALUES ('"+schedule.getBillboard_name()+ "','"+ schedule.getDate_time_start()+"','"+schedule.getDate_time_finish()+ "'," +
                 "'"+schedule.getSchedule_create_by()+"')";
-
         int result = 0;
         result =  executeUpdate(ADD_BILLBOARD_QUERY);
         return result;
@@ -86,10 +85,9 @@ public class DBScheduleTableQueries {
         return result;
     }
 
-
     /**
      * @author Fernando Barbosa Silva
-     * Get a schedule from the database.
+     * Get the specified schedule from the database.
      * @param schedule_id string.
      * @return returns an object of the schedule selected, if schedule does
      * not exist it return an empty object.
@@ -106,7 +104,7 @@ public class DBScheduleTableQueries {
 
     /**
      * @author Fernando Barbosa Silva
-     * Get a schedule from the database.
+     * Select the schedule to be presented by for the Billboads .
      * @return returns an object of the schedule selected, if schedule does
      * not exist it return an empty object.
      */
@@ -118,9 +116,9 @@ public class DBScheduleTableQueries {
         System.out.println("Current date: " + currentDate);
 
         // Query
-        //String query = "SELECT * FROM schedules WHERE date_time_start <='"+currentDate+"' AND '"+currentDate+"'<= date_time_finish";
         String query = "SELECT * FROM schedules WHERE schedule_create_date=(" +
                 "SELECT MAX(schedule_create_date) FROM schedules WHERE date_time_start <='"+currentDate+"' AND '"+currentDate+"'<= date_time_finish)";
+
         List<Schedule> list = new ArrayList<>();
         list = executeGetSchedule(query);
         return list;
@@ -134,40 +132,21 @@ public class DBScheduleTableQueries {
         String currentDate =  dtf.format(localDate).toString();
         System.out.println("Current date: " + currentDate);
 
-        //java.sql.Date date = new java.sql.Date(2020, 5, 21);
-
         String dateStart   = "2020-05-21 19:00:00";
-        String dateFinish  = "2020-05-21 21:05:00";
-
-
-        long time = System.currentTimeMillis();
-        java.sql.Date d = new java.sql.Date(time);
-        System.out.println(d);
+        String dateFinish  = "2020-05-22 21:05:00";
 
         //Date date = new Date();
-        //Schedule schedule = new Schedule(0, "New billboard",dateStart,dateFinish,"fernando", "");
-        //System.out.println(addSchedule(schedule));
+        Schedule schedule = new Schedule(0, "New billboard02",dateStart,dateFinish,"fernando", "");
+        System.out.println(addSchedule(schedule));
 
         List<Schedule> list = selectScheduledBillboard();
-        System.out.println(list.size());
-        System.out.println(list.get(0).getBillboard_name());
+        System.out.println(list.get(0).getSchedule_id());
 
-
-        //String newXML = Xml.createXmlString(xmlFormat_2);
-
-        //System.out.println( "Update billboard status: "+ updateBillboard("billboard_05","xml",newXML));
-
-        // System.out.println("Delete billboard status: " + deleteBillboard("billboard_01"));
-
-        //Billboard billboard = new Billboard("billboard_02", newXML, "fernando");
-        //System.out.println("Add billboard Status: " + addBillboard(billboard));
-
-        //List<Billboard> list = getBillboardList();
-        //System.out.println(list.get(0).getCreated_by());
-
+        //List<Schedule> list1 = getsScheduleList();
+        //for( Schedule schedule : list1){
+        //    System.out.println(schedule.getSchedule_id());
+        //}
 
     }
-
-
 
 }

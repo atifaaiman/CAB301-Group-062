@@ -110,7 +110,6 @@ public class DBExecuteQuery {
                         editAllBillboards, scheduleBillboards, editUsers);
                 userList.add(userPermissions);
             }
-
             statement.close();
             connection.close();
             setInstanceToNull();
@@ -149,7 +148,6 @@ public class DBExecuteQuery {
                 String informationColour =  resultSet.getString(8);
                 String information =  resultSet.getString(9);
                 String createdBy =  resultSet.getString(10);
-
                 Billboard billboard = new Billboard(billboardName,backgroundColour,messageColour,message,
                         pictureType,pictureData,informationColour, information ,createdBy);
                 billboardList.add(billboard);
@@ -189,8 +187,6 @@ public class DBExecuteQuery {
                 String dateTimeFinish = String.valueOf(resultSet.getDate(4));
                 String scheduleCreatedBy =  resultSet.getString(5);
                 String scheduleCreateDate = String.valueOf(resultSet.getDate(6));
-
-
                 Schedule schedule = new Schedule(scheduleId,billboardName,dateTimeStart,dateTimeFinish,scheduleCreatedBy,scheduleCreateDate);
                 scheduleList.add(schedule);
             }
@@ -209,7 +205,7 @@ public class DBExecuteQuery {
      * @author Fernando Barbosa Silva
      * Check if a billboard is in the database using the unique billboard_name.
      * @param billboard_name  strings, provide the user_name that need to be checked.
-     * @return returns 1 if billboard_name exist in the database, returns 0 if it does not exist.
+     * @return returns true if billboard_name exist in the database, returns false if it does not exist.
      * @throws SQLException if there is an error in the query or database connection.
      */
     public static boolean executeBillboardExists(String billboard_name){
@@ -240,15 +236,16 @@ public class DBExecuteQuery {
         }
         catch (SQLException e){
             System.out.println(e.getMessage());
+            return false;
         }
-        return false;
+        //return false;
     }
 
     /**
      * @author Fernando Barbosa Silva
      * Check if a user is in the database.
      * @param user_name  strings, provide the user_name that need to be checked.
-     * @return returns 1 if user exist in the database, returns 0 if user does not exist.
+     * @return returns true if user exist in the database, returns false if user does not exist.
      * @throws SQLException if there is an error in the query or database connection.
      */
     public static boolean executeUserExists(String user_name){
@@ -257,11 +254,13 @@ public class DBExecuteQuery {
 
         try{
             // get connection
-            Connection connection = getInstance();
+            //Connection connection = getInstance();
+            Connection connection = DBConnection.getInstance();
             Statement st = connection.createStatement();
             ResultSet rs = st.executeQuery(query);
 
             // Check each row
+            boolean status = false;
             while (rs.next()) {
                 String user = rs.getString(1);
                 //System.out.println( user);

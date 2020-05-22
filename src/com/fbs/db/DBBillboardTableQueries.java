@@ -114,22 +114,14 @@ public class DBBillboardTableQueries {
     // Main class to validate the code
     public static void main(String[] Args){
 
-
-
         boolean test = DBExecuteQuery.executeBillboardExists("TesT_01");
-        System.out.println(test);
+        System.out.println("Billboard exist: " + test);
 
-        Billboard billboard = new Billboard("Test_01","#0000FF","#FFFF00",
+        Billboard billboard = new Billboard("Test_02","#0000FF","#FFFF00",
                 "Welcome to the _____ Corporation's Annual Fundraiser!", "url",
                 "https://example.com/fundraiser_image.jpg", "#00FFF",
                 "Be sure to check out https://example.com/ for more information.","fernandobs");
         System.out.println("Add billboard status: " + addBillboard(billboard));
-
-        LocalDateTime localDate = LocalDateTime.now();
-        System.out.println(localDate);
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("YYYY-MM-dd");
-        System.out.println(dtf.format(localDate));
-
 
 
         //String newXML = Xml.createXmlString(xmlFormat_2);
@@ -142,9 +134,10 @@ public class DBBillboardTableQueries {
        //System.out.println("Add billboard Status: " + addBillboard(billboard));
 
     List<Billboard> list = getBillboardList();
-    System.out.println(list.get(0).getCreated_by());
-
-
+    for (Billboard item : list){
+        System.out.println(item.getBillboard_name());
+    }
+    
     }
 
 

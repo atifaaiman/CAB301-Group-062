@@ -19,24 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c0e0fd7-9a43-4260-b0aa-b876be8f49a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/ClientListener$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/ClientListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/DB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/TestClientListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/TestServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/common/Billboard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/common/Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/common/MessageBuilder$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/common/MessageBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/common/Permission.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/common/Schedule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/common/TestMessageBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/common/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/db.sql" beforeDir="false" />
-    </list>
+    <list default="true" id="0c0e0fd7-9a43-4260-b0aa-b876be8f49a4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,7 +114,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.fbs.Main" />
       <module name="CAB302_GITHUB" />
       <extension name="coverage">
@@ -146,7 +129,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.DBBillboardTableQueries" />
         <item itemvalue="Application.DBDisplayContent" />
         <item itemvalue="Application.DBUsersTableQueries" />
@@ -180,17 +162,19 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="306" y="249" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590377454278">
-      <screen x="0" y="23" width="1920" height="1128" />
+    <state x="306" y="225" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590378141559">
+      <screen x="0" y="23" width="1920" height="1008" />
     </state>
+    <state x="306" y="225" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1008@0.23.1920.1008" timestamp="1590378141559" />
     <state x="306" y="249" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1128@0.23.1920.1128" timestamp="1590377454278" />
     <state x="2069" y="546" key="#com.intellij.ide.util.MemberChooser" timestamp="1590012817950">
       <screen x="0" y="23" width="3008" height="1620" />
     </state>
     <state x="2069" y="546" key="#com.intellij.ide.util.MemberChooser/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590012817950" />
-    <state x="653" y="446" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1590377451893">
-      <screen x="0" y="23" width="1920" height="1128" />
+    <state x="583" y="409" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1590378139582">
+      <screen x="0" y="23" width="1920" height="1008" />
     </state>
+    <state x="583" y="409" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1920.1008@0.23.1920.1008" timestamp="1590378139582" />
     <state x="653" y="446" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1920.1128@0.23.1920.1128" timestamp="1590377451893" />
     <state x="1023" y="630" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590040742302" />
     <state x="996" y="639" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1590040744195">
@@ -233,11 +217,11 @@
     <state width="1878" height="248" key="GridCell.Tab.0.right/0.23.1920.1008@0.23.1920.1008" timestamp="1590198031088" />
     <state width="1665" height="248" key="GridCell.Tab.0.right/0.23.1920.1128@0.23.1920.1128" timestamp="1590224041382" />
     <state width="1916" height="326" key="GridCell.Tab.0.right/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590128463881" />
-    <state x="748" y="334" width="836" height="553" key="SettingsEditor" timestamp="1590372901267">
+    <state x="401" y="177" width="900" height="722" key="SettingsEditor" timestamp="1590377813412">
       <screen x="0" y="23" width="1920" height="1008" />
     </state>
     <state x="448" y="154" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1589973667897" />
-    <state x="748" y="334" width="836" height="553" key="SettingsEditor/0.23.1920.1008@0.23.1920.1008" timestamp="1590372901267" />
+    <state x="401" y="177" width="900" height="722" key="SettingsEditor/0.23.1920.1008@0.23.1920.1008" timestamp="1590377813412" />
     <state x="448" y="168" width="1309" height="837" key="SettingsEditor/0.23.1920.1128@0.23.1920.1128" timestamp="1589959494560" />
     <state x="1172" y="523" key="SettingsEditor/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590010386701" />
     <state x="449" y="732" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1590057835417">

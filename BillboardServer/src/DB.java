@@ -135,17 +135,19 @@ public class DB {
 	}
 
 	/**
+	 * @author Fernando Barbosa Silva
 	 * Gets the users.
-	 *
 	 * @return the users
-	 * @throws SQLException the SQL exception
+	 * @throws SQLException the SQL exception0
 	 */
 	public static List<User> getUsers() throws SQLException {
 		List<User> users = new ArrayList<>();
 		try (Connection conn = getConnection(); Statement stmt = conn.createStatement()) {
 			try (ResultSet rs = stmt.executeQuery("select * from user")) {
 				while (rs.next()) {
-					users.add(new User(rs.getString(1), rs.getString(2), rs.getString(3)));
+					users.add(new User(rs.getString(1), rs.getString(2), rs.getString(3),
+							rs.getBoolean(4),rs.getBoolean(5), rs.getBoolean(6),
+							rs.getBoolean(7), rs.getBoolean(8)));
 				}
 			}
 		}
@@ -350,9 +352,14 @@ public class DB {
 
 		try (Connection conn = getConnection();
 				PreparedStatement stmt = conn.prepareStatement("insert into user value(?,?,?)")) {
-			stmt.setString(1, user.getUsername());
-			stmt.setString(2, user.getPassword());
-			stmt.setString(3, user.getPermission());
+			stmt.setString (1, user.getUsername());
+			stmt.setString (2, user.getPassword());
+			stmt.setString (3, user.getPermission());
+			stmt.setBoolean(4, user.getAdministrator());  	    // Fernando added
+			stmt.setBoolean(5, user.getCreate_billboards());  	// Fernando added
+			stmt.setBoolean(6, user.getEdit_all_billboards()); // Fernando added
+			stmt.setBoolean(7, user.getSchedule_billboards()); // Fernando added
+			stmt.setBoolean(8, user.getEdit_users());  	    // Fernando added
 			stmt.executeUpdate();
 		}
 	}

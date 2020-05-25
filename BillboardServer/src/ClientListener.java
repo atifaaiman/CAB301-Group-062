@@ -436,7 +436,7 @@ public class ClientListener implements Runnable {
 
 			if (!user.getOldPassword().equals(user.getPassword())) {
 				String salt = DB.getSalt(msg.user().getUsername()); // Obtain salt from database.
-				user.setPassword(user.getPassword() + salt); // Add salt.
+				user.setPassword(user.getPassword() + salt); 		// Add salt.
 
 				// Hash second time.
 				MessageDigest md = MessageDigest.getInstance("MD5");

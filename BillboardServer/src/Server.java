@@ -13,22 +13,22 @@ import java.util.Properties;
 public class Server {
 
 	/** The Constant NETWORK_PROPERTIES_FILENAME. */
-	public final static String NETWORK_PROPERTIES_FILENAME = "BillboardServer/network.props";
-
+	public final static String NETWORK_PROPERTIES_FILENAME = "network.props";
 
 	/**
 	 * Starts the server. Here it reads the network properties file and specifies
 	 * the port to listen to.
 	 */
 	public void start() {
+
 		// Read network.props file to obtain host and port to listen to.
 		try (InputStream fileStream = new FileInputStream(NETWORK_PROPERTIES_FILENAME)) {
+
 			Properties props = new Properties();
 
 			props.load(fileStream);
 
 			int port = Integer.parseInt(props.getProperty("port"));
-			System.out.println(port);
 
 			// Initialize database before start the server (it does not
 			// make sense to run the server if database is not working).
@@ -70,17 +70,6 @@ public class Server {
 		} catch (IOException e) {
 			System.err.println(e);
 		}
-	}
-
-	/**
-	 * The main method to run the server
-	 *
-	 * @param args the arguments
-	 */
-	public static void main(String[] args) {
-
-		Server server = new Server();
-		server.start();
 	}
 
 }

@@ -122,6 +122,7 @@ public class MessageBuilder {
 	 * @param command the command
 	 * @return the message
 	 */
+
 	public static Message build(int command) {
 		return build(null, null, command, null, null, null, null, null, null, null, null, null, null);
 	}
@@ -148,4 +149,8 @@ public class MessageBuilder {
 	public static Message build(int command, String token) {
 		return build(null, null, command, null, null, token, null, null, null, null, null, null, null);
 	}
+
+
+
+
 }

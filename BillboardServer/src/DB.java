@@ -28,7 +28,7 @@ import common.User;
 public class DB {
 
 	/** The Constant DATABASE_PROPERTIES_FILENAME. */
-	public final static String DATABASE_PROPERTIES_FILENAME = "BillboardServer/db.props";
+	public final static String DATABASE_PROPERTIES_FILENAME = "db.props";
 
 	/** The Constant DATABASE_SCRIPT_FILENAME. */
 	public final static String DATABASE_SCRIPT_FILENAME = "db.sql";

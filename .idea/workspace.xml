@@ -20,64 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c0e0fd7-9a43-4260-b0aa-b876be8f49a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAB302_GITHUB.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CAB302_PROJECT.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mariadb-java-client-2.6.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/META-INF/CAB302_GITHUB.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/controlPanel/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBBillboardTableQueries.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBCheckSchema.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBCheckTables.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBDisplayContent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBExecuteQuery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBPropsFileRead.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBScheduleTableQueries.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBSetupQueries.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/db/DBUsersTableQueries.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/general/Billboard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/general/Schedule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/general/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/general/UserPermissions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/general/Xml.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/server/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CAB302_GITHUB/com/fbs/viwer/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataBase/META-INF/DataBase.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataBase/com/fbs/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataBase/com/fbs/db/DBBillboardTableQueries.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataBase/com/fbs/db/DBCheckSchema.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataBase/com/fbs/db/DBCheckTables.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataBase/com/fbs/db/DBConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataBase/com/fbs/db/DBDisplayContent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataBase/com/fbs/db/DBExecuteQuery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataBase/com/fbs/db/DBPropsFileRead.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataBase/com/fbs/db/DBSetupQueries.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataBase/com/fbs/db/DBUsersTableQueries.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/controlPanel/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBBillboardTableQueries.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBCheckSchema.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBCheckTables.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBDisplayContent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBExecuteQuery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBPropsFileRead.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBScheduleTableQueries.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBSetupQueries.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/db/DBUsersTableQueries.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/general/Billboard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/general/Schedule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/general/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/general/UserPermissions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/general/Xml.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/server/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fbs/viwer/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/ClientListener$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/ClientListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/DB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/TestClientListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/TestServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/common/Billboard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/common/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/common/MessageBuilder$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/common/MessageBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/common/Permission.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/common/Schedule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/common/TestMessageBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/common/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BillboardServer/db.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,17 +180,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="306" y="249" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589970291446">
+    <state x="306" y="249" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590377454278">
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
-    <state x="306" y="249" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1128@0.23.1920.1128" timestamp="1589970291446" />
+    <state x="306" y="249" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1128@0.23.1920.1128" timestamp="1590377454278" />
     <state x="2069" y="546" key="#com.intellij.ide.util.MemberChooser" timestamp="1590012817950">
       <screen x="0" y="23" width="3008" height="1620" />
     </state>
     <state x="2069" y="546" key="#com.intellij.ide.util.MemberChooser/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590012817950" />
-    <state x="1023" y="630" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1590040742302">
-      <screen x="0" y="23" width="3008" height="1620" />
+    <state x="653" y="446" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1590377451893">
+      <screen x="0" y="23" width="1920" height="1128" />
     </state>
+    <state x="653" y="446" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1920.1128@0.23.1920.1128" timestamp="1590377451893" />
     <state x="1023" y="630" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.3008.1620/3008.911.1920.1177@0.23.3008.1620" timestamp="1590040742302" />
     <state x="996" y="639" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1590040744195">
       <screen x="0" y="23" width="3008" height="1620" />

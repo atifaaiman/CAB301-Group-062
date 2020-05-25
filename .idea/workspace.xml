@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="0c0e0fd7-9a43-4260-b0aa-b876be8f49a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+=======
     <list default="true" id="0c0e0fd7-9a43-4260-b0aa-b876be8f49a4" name="Default Changelist" comment="" />
+>>>>>>> b16f51b1dde643870c3e1203d32f11966bba6e9c
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -185,6 +191,10 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="698" y="334" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1589973666094" />
+    <state x="805" y="375" key="FileChooserDialogImpl" timestamp="1590376977147">
+      <screen x="0" y="0" width="2048" height="1240" />
+    </state>
+    <state x="805" y="375" key="FileChooserDialogImpl/0.0.2048.1240@0.0.2048.1240" timestamp="1590376977147" />
     <state width="1665" height="248" key="GridCell.Tab.0.bottom" timestamp="1590224041383">
       <screen x="0" y="23" width="1920" height="1128" />
     </state>

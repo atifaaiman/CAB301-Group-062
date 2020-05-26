@@ -17,4 +17,9 @@ public class Hash {
         byte[] hash = md.digest(password.getBytes());
         return String.format("%032X", new BigInteger(1, hash));
     }
+
+    public static void main(String[] Args) throws NoSuchAlgorithmException {
+        System.out.println(hashPassword("admin"));
+        System.out.println(hashPassword("admin"));
+    }
 }

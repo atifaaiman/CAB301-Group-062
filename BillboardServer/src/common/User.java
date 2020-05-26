@@ -48,7 +48,7 @@ public class User implements Serializable {
 
 	/**
 	 * Instantiates a new user.
-	 *  @param username the username
+	 * @param username the username
 	 * @param password the password
 	 * @param permission the permission
 	 * @param administrator

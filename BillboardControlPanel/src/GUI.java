@@ -1,4 +1,6 @@
 import java.awt.CardLayout;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -36,6 +38,8 @@ public class GUI extends JFrame {
 	/** The card layout. */
 	private CardLayout cardLayout = new CardLayout();
 
+	private boolean isLoginPanel;
+
 	/**
 	 * Instantiates a new gui.
 	 *
@@ -46,7 +50,22 @@ public class GUI extends JFrame {
 
 		initGUIComponents();
 
-		setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+		addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowClosing(WindowEvent e) {
+				if (!isLoginPanel) {
+					if (JOptionPane.showConfirmDialog(null,
+							"Do you want to exit your work will not be saved?") == 0) {
+						System.exit(0);
+					}
+				} else {
+					System.exit(0);
+				}
+			}
+		});
+//		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
 		setResizable(false);
 		pack();
 		setLocationRelativeTo(null);
@@ -73,13 +92,16 @@ public class GUI extends JFrame {
 	 * Shows login panel.
 	 */
 	public void showLogin() {
+
 		cardLayout.show(mainPanel, "Login");
+		isLoginPanel = true;
 	}
 
 	/**
 	 * Shows billboards panel.
 	 */
 	public void showBillboards() {
+		isLoginPanel = false;
 		cardLayout.show(mainPanel, "Billboards");
 	}
 
@@ -87,13 +109,16 @@ public class GUI extends JFrame {
 	 * Shows schedules panel.
 	 */
 	public void showSchedules() {
+
 		cardLayout.show(mainPanel, "Schedules");
+		isLoginPanel = false;
 	}
 
 	/**
 	 * Shows users panel.
 	 */
 	public void showUsers() {
+		isLoginPanel = false;
 		cardLayout.show(mainPanel, "Users");
 	}
 

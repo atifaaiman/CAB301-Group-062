@@ -1,4 +1,4 @@
-package common;
+package utilities;
 
 /**
  * The Class Permission.

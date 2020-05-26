@@ -159,9 +159,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public class <span class="typeNameLabel">BillboardsPanel</span>
 extends javax.swing.JPanel</pre>
 <div class="block">The Class BillboardsPanel encapsulates view for Billboard panel where users
- with permissions <a href="common/Permission.html#EDIT_ALL_BILLBOARDS"><code>Permission.EDIT_ALL_BILLBOARDS</code></a> and
- <a href="common/Permission.html#CREATE_BILLBOARDS"><code>Permission.CREATE_BILLBOARDS</code></a> are able to view, delete, edit or
- add <a href="common/Billboard.html" title="class in common"><code>Billboard</code></a></div>
+ with permissions <a href="utilities/Permission.html#EDIT_ALL_BILLBOARDS"><code>Permission.EDIT_ALL_BILLBOARDS</code></a> and
+ <a href="utilities/Permission.html#CREATE_BILLBOARDS"><code>Permission.CREATE_BILLBOARDS</code></a> are able to view, delete, edit or
+ add <a href="utilities/Billboard.html" title="class in utilities"><code>Billboard</code></a></div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="serialized-form.html#BillboardsPanel">Serialized Form</a></dd>
@@ -272,10 +272,10 @@ extends javax.swing.JPanel</pre>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="common/Billboard.html" title="class in common">Billboard</a></code></td>
+<td class="colFirst"><code><a href="utilities/Billboard.html" title="class in utilities">Billboard</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#addBuilboard()">addBuilboard</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Adds the new <a href="common/Billboard.html" title="class in common"><code>Billboard</code></a>.</div>
+<div class="block">Adds the new <a href="utilities/Billboard.html" title="class in utilities"><code>Billboard</code></a>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -293,14 +293,14 @@ extends javax.swing.JPanel</pre>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="common/Billboard.html" title="class in common">Billboard</a></code></td>
+<td class="colFirst"><code><a href="utilities/Billboard.html" title="class in utilities">Billboard</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#deleteBillboard(int)">deleteBillboard</a></span>&#8203;(int&nbsp;row)</code></th>
 <td class="colLast">
 <div class="block">Deletes billboard.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="common/Billboard.html" title="class in common">Billboard</a></code></td>
+<td class="colFirst"><code><a href="utilities/Billboard.html" title="class in utilities">Billboard</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#editBillboard(int)">editBillboard</a></span>&#8203;(int&nbsp;row)</code></th>
 <td class="colLast">
 <div class="block">Edits the billboard.</div>
@@ -420,7 +420,7 @@ extends javax.swing.JPanel</pre>
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#updateTable(java.util.List)">updateTable</a></span>&#8203;(java.util.List&lt;<a href="common/Billboard.html" title="class in common">Billboard</a>&gt;&nbsp;billboards)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#updateTable(java.util.List)">updateTable</a></span>&#8203;(java.util.List&lt;<a href="utilities/Billboard.html" title="class in utilities">Billboard</a>&gt;&nbsp;billboards)</code></th>
 <td class="colLast">
 <div class="block">Updates tables with all billboards.</div>
 </td>
@@ -528,7 +528,7 @@ extends javax.swing.JPanel</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>deleteBillboard</h4>
-<pre class="methodSignature">public&nbsp;<a href="common/Billboard.html" title="class in common">Billboard</a>&nbsp;deleteBillboard&#8203;(int&nbsp;row)</pre>
+<pre class="methodSignature">public&nbsp;<a href="utilities/Billboard.html" title="class in utilities">Billboard</a>&nbsp;deleteBillboard&#8203;(int&nbsp;row)</pre>
 <div class="block">Deletes billboard.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -602,7 +602,7 @@ extends javax.swing.JPanel</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>editBillboard</h4>
-<pre class="methodSignature">public&nbsp;<a href="common/Billboard.html" title="class in common">Billboard</a>&nbsp;editBillboard&#8203;(int&nbsp;row)
+<pre class="methodSignature">public&nbsp;<a href="utilities/Billboard.html" title="class in utilities">Billboard</a>&nbsp;editBillboard&#8203;(int&nbsp;row)
                         throws java.io.IOException,
                                javax.xml.parsers.ParserConfigurationException,
                                org.xml.sax.SAXException</pre>
@@ -626,11 +626,11 @@ extends javax.swing.JPanel</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>addBuilboard</h4>
-<pre class="methodSignature">public&nbsp;<a href="common/Billboard.html" title="class in common">Billboard</a>&nbsp;addBuilboard()
+<pre class="methodSignature">public&nbsp;<a href="utilities/Billboard.html" title="class in utilities">Billboard</a>&nbsp;addBuilboard()
                        throws javax.sql.rowset.serial.SerialException,
                               java.sql.SQLException,
                               java.io.IOException</pre>
-<div class="block">Adds the new <a href="common/Billboard.html" title="class in common"><code>Billboard</code></a>.</div>
+<div class="block">Adds the new <a href="utilities/Billboard.html" title="class in utilities"><code>Billboard</code></a>.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the billboard to be added</dd>
@@ -647,7 +647,7 @@ extends javax.swing.JPanel</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>updateTable</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;updateTable&#8203;(java.util.List&lt;<a href="common/Billboard.html" title="class in common">Billboard</a>&gt;&nbsp;billboards)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;updateTable&#8203;(java.util.List&lt;<a href="utilities/Billboard.html" title="class in utilities">Billboard</a>&gt;&nbsp;billboards)</pre>
 <div class="block">Updates tables with all billboards. This method is invoked by timer in
  <a href="Controller.html" title="class in &lt;Unnamed&gt;"><code>Controller</code></a> class every <a href="GUI.html#UPDATE_DELAY"><code>GUI.UPDATE_DELAY</code></a>.</div>
 <dl>

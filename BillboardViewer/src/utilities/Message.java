@@ -1,4 +1,4 @@
-package common;
+package utilities;
 
 import java.io.Serializable;
 import java.util.List;

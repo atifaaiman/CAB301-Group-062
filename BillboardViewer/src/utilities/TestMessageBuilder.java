@@ -1,4 +1,4 @@
-package common;
+package utilities;
 
 import org.junit.jupiter.api.Test;
 

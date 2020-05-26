@@ -1,4 +1,4 @@
-import static common.Message.*;
+import static utilities.Message.*;
 
 import java.io.IOException;
 import java.io.ObjectOutputStream;
@@ -6,10 +6,10 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-import common.Billboard;
-import common.MessageBuilder;
-import common.Schedule;
-import common.User;
+import utilities.Billboard;
+import utilities.MessageBuilder;
+import utilities.Schedule;
+import utilities.User;
 
 /**
  * The Class OutputCommandHandler. It's responsible only for the sending
@@ -88,7 +88,7 @@ public class OutputCommandHandler {
 	 * password and current password are equal and if so, hashing is not needed,
 	 * otherwise hash because this is new password and needs to be updated.
 	 *
-	 * @param user  {@link common.User} to be updated
+	 * @param user  {@link utilities.User} to be updated
 	 * @param token unique session token
 	 * @throws NoSuchAlgorithmException the no such algorithm exception
 	 * @throws IOException              Signals that an I/O exception has occurred.

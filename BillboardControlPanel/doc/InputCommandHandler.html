@@ -135,10 +135,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public class <span class="typeNameLabel">InputCommandHandler</span>
 extends java.lang.Object</pre>
 <div class="block">The Class InputCommandHandler that encapsulates
- handler for all input <a href="common/Message.html" title="interface in common"><code>Message</code></a> objects
+ handler for all input <a href="utilities/Message.html" title="interface in utilities"><code>Message</code></a> objects
  from server.
  Uses Observer pattern to update <a href="Observable.html" title="interface in &lt;Unnamed&gt;"><code>Observable</code></a>
- once new input <a href="common/Message.html" title="interface in common"><code>Message</code></a> received.
+ once new input <a href="utilities/Message.html" title="interface in utilities"><code>Message</code></a> received.
  Observable in this case is <a href="Controller.html" title="class in &lt;Unnamed&gt;"><code>Controller</code></a></div>
 </li>
 </ul>
@@ -204,7 +204,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#processCommand(common.Message)">processCommand</a></span>&#8203;(<a href="common/Message.html" title="interface in common">Message</a>&nbsp;msg)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#processCommand(utilities.Message)">processCommand</a></span>&#8203;(<a href="utilities/Message.html" title="interface in utilities">Message</a>&nbsp;msg)</code></th>
 <td class="colLast">
 <div class="block">Processes the command.</div>
 </td>
@@ -252,25 +252,25 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a id="processCommand(common.Message)">
+<a id="processCommand(utilities.Message)">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>processCommand</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;processCommand&#8203;(<a href="common/Message.html" title="interface in common">Message</a>&nbsp;msg)</pre>
+<pre class="methodSignature">public&nbsp;void&nbsp;processCommand&#8203;(<a href="utilities/Message.html" title="interface in utilities">Message</a>&nbsp;msg)</pre>
 <div class="block">Processes the command.
  Whenever this method is called,
  it updates observer (<a href="GUI.html" title="class in &lt;Unnamed&gt;"><code>GUI</code></a>) by
- invoking <a href="Observable.html#update(common.Message)"><code>Observable.update(Message)</code></a>
+ invoking <a href="Observable.html#update(utilities.Message)"><code>Observable.update(Message)</code></a>
  method.
- <a href="#login(common.Message)"><code>login(Message)</code></a> and
- <a href="#logout(common.Message)"><code>logout(Message)</code></a> methods
+ <a href="#login(utilities.Message)"><code>login(Message)</code></a> and
+ <a href="#logout(utilities.Message)"><code>logout(Message)</code></a> methods
  are helper methods and they also call 
- <a href="Observable.html#update(common.Message)"><code>Observable.update(Message)</code></a> method at the end.</div>
+ <a href="Observable.html#update(utilities.Message)"><code>Observable.update(Message)</code></a> method at the end.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>msg</code> - the <a href="common/Message.html" title="interface in common"><code>Message</code></a> object</dd>
+<dd><code>msg</code> - the <a href="utilities/Message.html" title="interface in utilities"><code>Message</code></a> object</dd>
 </dl>
 </li>
 </ul>

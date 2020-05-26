@@ -1,12 +1,10 @@
-import static common.Message.*;
+import static utilities.Message.*;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.math.BigInteger;
 import java.net.Socket;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
@@ -18,12 +16,12 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.UUID;
 
-import common.Billboard;
-import common.Message;
-import common.MessageBuilder;
-import common.Permission;
-import common.Schedule;
-import common.User;
+import utilities.Billboard;
+import utilities.Message;
+import utilities.MessageBuilder;
+import utilities.Permission;
+import utilities.Schedule;
+import utilities.User;
 
 /**
  * Listens the client requests. Every time the client sends {@link Message}},
@@ -452,10 +450,10 @@ public class ClientListener implements Runnable {
 
 	/**
 	 * Checks whether permission is "Edit Users" and if so, sends list of
-	 * {@link common.User} objects back to the client. Otherwise "No Permission"
+	 * {@link utilities.User} objects back to the client. Otherwise "No Permission"
 	 * message.
 	 *
-	 * @param msg {@link common.Message}
+	 * @param msg {@link utilities.Message}
 	 * @param oos output stream to write object to be send
 	 * @throws IOException  Signals that an I/O exception has occurred.
 	 * @throws SQLException the SQL exception

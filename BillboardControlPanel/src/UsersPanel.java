@@ -18,8 +18,8 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableModel;
 
-import common.Permission;
-import common.User;
+import utilities.Permission;
+import utilities.User;
 
 /**
  * The Class UsersPanel that encapsulates user interface to display users.

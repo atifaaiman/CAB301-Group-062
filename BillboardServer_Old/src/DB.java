@@ -18,9 +18,9 @@ import java.util.Properties;
 
 import javax.sql.rowset.serial.SerialBlob;
 
-import common.Billboard;
-import common.Schedule;
-import common.User;
+import utilities.Billboard;
+import utilities.Schedule;
+import utilities.User;
 
 /**
  * The Class DB. Encapsulates database MariaDB connection.

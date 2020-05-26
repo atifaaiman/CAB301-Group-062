@@ -144,9 +144,9 @@ implements <a href="Observable.html" title="interface in &lt;Unnamed&gt;">Observ
  Also it implements <a href="Observable.html" title="interface in &lt;Unnamed&gt;"><code>Observable</code></a> interface to be registered on
  updates from <a href="InputCommandHandler.html" title="class in &lt;Unnamed&gt;"><code>InputCommandHandler</code></a>. The logic is the following:
  once input message from server received, <a href="InputCommandHandler.html" title="class in &lt;Unnamed&gt;"><code>InputCommandHandler</code></a>
- catches this message (from <a href="ServerListener.html" title="class in &lt;Unnamed&gt;"><code>ServerListener</code></a>) and calls <a href="Observable.html#update(common.Message)"><code>Observable.update(Message)</code></a>
- method inside <a href="InputCommandHandler.html#processCommand(common.Message)"><code>InputCommandHandler.processCommand(Message)</code></a>. After that
- <a href="#update(common.Message)"><code>update(Message)</code></a> is triggered and accepts update command, and
+ catches this message (from <a href="ServerListener.html" title="class in &lt;Unnamed&gt;"><code>ServerListener</code></a>) and calls <a href="Observable.html#update(utilities.Message)"><code>Observable.update(Message)</code></a>
+ method inside <a href="InputCommandHandler.html#processCommand(utilities.Message)"><code>InputCommandHandler.processCommand(Message)</code></a>. After that
+ <a href="#update(utilities.Message)"><code>update(Message)</code></a> is triggered and accepts update command, and
  according to the accepted command, updates <a href="GUI.html" title="class in &lt;Unnamed&gt;"><code>GUI</code></a>.</div>
 </li>
 </ul>
@@ -202,9 +202,9 @@ implements <a href="Observable.html" title="interface in &lt;Unnamed&gt;">Observ
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#update(common.Message)">update</a></span>&#8203;(<a href="common/Message.html" title="interface in common">Message</a>&nbsp;msg)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#update(utilities.Message)">update</a></span>&#8203;(<a href="utilities/Message.html" title="interface in utilities">Message</a>&nbsp;msg)</code></th>
 <td class="colLast">
-<div class="block">Updates the view according to the input <a href="common/Message.html" title="interface in common"><code>Message</code></a>.</div>
+<div class="block">Updates the view according to the input <a href="utilities/Message.html" title="interface in utilities"><code>Message</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -269,19 +269,19 @@ implements <a href="Observable.html" title="interface in &lt;Unnamed&gt;">Observ
 <div class="block">Inits the controller.</div>
 </li>
 </ul>
-<a id="update(common.Message)">
+<a id="update(utilities.Message)">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>update</h4>
-<pre class="methodSignature">public&nbsp;void&nbsp;update&#8203;(<a href="common/Message.html" title="interface in common">Message</a>&nbsp;msg)</pre>
-<div class="block">Updates the view according to the input <a href="common/Message.html" title="interface in common"><code>Message</code></a>.</div>
+<pre class="methodSignature">public&nbsp;void&nbsp;update&#8203;(<a href="utilities/Message.html" title="interface in utilities">Message</a>&nbsp;msg)</pre>
+<div class="block">Updates the view according to the input <a href="utilities/Message.html" title="interface in utilities"><code>Message</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="Observable.html#update(common.Message)">update</a></code>&nbsp;in interface&nbsp;<code><a href="Observable.html" title="interface in &lt;Unnamed&gt;">Observable</a></code></dd>
+<dd><code><a href="Observable.html#update(utilities.Message)">update</a></code>&nbsp;in interface&nbsp;<code><a href="Observable.html" title="interface in &lt;Unnamed&gt;">Observable</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>msg</code> - the input <a href="common/Message.html" title="interface in common"><code>Message</code></a></dd>
+<dd><code>msg</code> - the input <a href="utilities/Message.html" title="interface in utilities"><code>Message</code></a></dd>
 </dl>
 </li>
 </ul>

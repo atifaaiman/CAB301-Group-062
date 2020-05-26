@@ -7,8 +7,8 @@ import java.net.Socket;
 
 import org.junit.jupiter.api.Test;
 
-import common.Message;
-import common.MessageBuilder;
+import utilities.Message;
+import utilities.MessageBuilder;
 
 /**
  * The Class TestClientListener.

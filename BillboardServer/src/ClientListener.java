@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import common.*;
+=======
+import static utilities.Message.*;
+>>>>>>> 54540e4fad4024e5412ffe141953d140f5015be4
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -9,9 +13,25 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.sql.SQLException;
+<<<<<<< HEAD
 import java.util.*;
 
 import static common.Message.*;
+=======
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.UUID;
+
+import utilities.Billboard;
+import utilities.Message;
+import utilities.MessageBuilder;
+import utilities.Permission;
+import utilities.Schedule;
+import utilities.User;
+>>>>>>> 54540e4fad4024e5412ffe141953d140f5015be4
 
 /**
  * Listens the client requests. Every time the client sends {@link Message}},
@@ -464,10 +484,10 @@ public class ClientListener implements Runnable {
 
 	/**
 	 * Checks whether permission is "Edit Users" and if so, sends list of
-	 * {@link common.User} objects back to the client. Otherwise "No Permission"
+	 * {@link utilities.User} objects back to the client. Otherwise "No Permission"
 	 * message.
 	 *
-	 * @param msg {@link common.Message}
+	 * @param msg {@link utilities.Message}
 	 * @param oos output stream to write object to be send
 	 * @throws IOException  Signals that an I/O exception has occurred.
 	 * @throws SQLException the SQL exception

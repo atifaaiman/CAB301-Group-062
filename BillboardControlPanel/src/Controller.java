@@ -1,11 +1,11 @@
-import static common.Message.BILLBOARDS;
-import static common.Message.FAILED_USERNAME_EXISTS;
-import static common.Message.INVALID_CREDENTIALS;
-import static common.Message.LOGIN;
-import static common.Message.LOGOUT;
-import static common.Message.NO_PERMISSION;
-import static common.Message.SCHEDULES;
-import static common.Message.USERS;
+import static utilities.Message.BILLBOARDS;
+import static utilities.Message.FAILED_USERNAME_EXISTS;
+import static utilities.Message.INVALID_CREDENTIALS;
+import static utilities.Message.LOGIN;
+import static utilities.Message.LOGOUT;
+import static utilities.Message.NO_PERMISSION;
+import static utilities.Message.SCHEDULES;
+import static utilities.Message.USERS;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -18,11 +18,11 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
-import common.Billboard;
-import common.Message;
-import common.Permission;
-import common.Schedule;
-import common.User;
+import utilities.Billboard;
+import utilities.Message;
+import utilities.Permission;
+import utilities.Schedule;
+import utilities.User;
 
 /**
  * The Class Controller according to MVC pattern. Accepts all user actions, such

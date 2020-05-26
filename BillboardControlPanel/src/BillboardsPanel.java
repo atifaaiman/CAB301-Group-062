@@ -14,6 +14,7 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+<<<<<<< HEAD
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
@@ -26,12 +27,24 @@ import java.nio.file.Paths;
 import java.sql.SQLException;
 import java.util.Base64;
 import java.util.List;
+=======
+
+import org.w3c.dom.Attr;
+import org.w3c.dom.DOMException;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+import utilities.Billboard;
+>>>>>>> 54540e4fad4024e5412ffe141953d140f5015be4
 
 /**
  * The Class BillboardsPanel encapsulates view for Billboard panel where users
- * with permissions {@link common.Permission#EDIT_ALL_BILLBOARDS} and
- * {@link common.Permission#CREATE_BILLBOARDS} are able to view, delete, edit or
- * add {@link common.Billboard}
+ * with permissions {@link utilities.Permission#EDIT_ALL_BILLBOARDS} and
+ * {@link utilities.Permission#CREATE_BILLBOARDS} are able to view, delete, edit or
+ * add {@link utilities.Billboard}
  */
 public class BillboardsPanel extends JPanel {
 
@@ -102,14 +115,24 @@ public class BillboardsPanel extends JPanel {
 	private final JTextField tfInfoText = new JTextField();
 
 	/** The radio button base 64. */
+<<<<<<< HEAD
 	private final JRadioButton jrbBase64 = new JRadioButton("Base 64", true);
 
+=======
+	private JRadioButton jrbBase64 = new JRadioButton("Image", true);
+	//Base64
+>>>>>>> 54540e4fad4024e5412ffe141953d140f5015be4
 	/** The radio button URL. */
 	private final JRadioButton jrbURL = new JRadioButton("URL");
 
 	/** The label select image. */
+<<<<<<< HEAD
 	private final JLabel lblSelectImage = new JLabel("Select picture...");
 
+=======
+	private JButton lblSelectImage = new JButton("Browse");
+	//select Image...
+>>>>>>> 54540e4fad4024e5412ffe141953d140f5015be4
 	/** The text field picture URL. */
 	private final JTextField tfPicURL = new JTextField(15);
 
@@ -163,6 +186,9 @@ public class BillboardsPanel extends JPanel {
 		pnlPicture.setPreferredSize(new Dimension(100, 40));
 		tfPicURL.setVisible(false); // Because base64 by default.
 
+		lblSelectImage.setBorderPainted(true);
+		lblSelectImage.setContentAreaFilled(true);
+
 		addBillboardPanel.setLayout(new GridLayout(9, 2, 10, 10));
 		addBillboardPanel.add(new JLabel("Enter Billboard name:"));
 		addBillboardPanel.add(tfBlbdName);
@@ -199,7 +225,8 @@ public class BillboardsPanel extends JPanel {
 			imgData = Files.readAllBytes(img.toPath());
 
 			BufferedImage bi = ImageIO.read(img);
-			Image image = bi.getScaledInstance(100, 40, Image.SCALE_SMOOTH);
+			Image image = bi.getScaledInstance(50, 40, Image.SCALE_SMOOTH);
+			//100			40
 			lblSelectImage.setIcon(new ImageIcon(image));
 			lblSelectImage.setText(null);
 		}
@@ -432,7 +459,7 @@ public class BillboardsPanel extends JPanel {
 	}
 
 	/**
-	 * Adds the new {@link common.Billboard}.
+	 * Adds the new {@link utilities.Billboard}.
 	 *
 	 * @return the billboard to be added
 	 * @throws SerialException the serial exception
@@ -551,7 +578,7 @@ public class BillboardsPanel extends JPanel {
 	 *
 	 * @return the label select image
 	 */
-	public JLabel getLblSelectImage() {
+	public JButton getLblSelectImage() {
 		return lblSelectImage;
 	}
 

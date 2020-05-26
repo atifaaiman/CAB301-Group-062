@@ -1,11 +1,11 @@
-import static common.Message.GET_BILLBOARD;
+import static utilities.Message.GET_BILLBOARD;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 
-import common.Message;
+import utilities.Message;
 
 /**
  * Listens for the incoming messages from server.

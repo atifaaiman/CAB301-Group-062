@@ -3,7 +3,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 
-import common.Message;
+import utilities.Message;
 
 /**
  * Listens for the responses from server.

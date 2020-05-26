@@ -15,6 +15,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
+<<<<<<< HEAD
+=======
+import javax.sql.rowset.serial.SerialBlob;
+
+import utilities.Billboard;
+import utilities.Schedule;
+import utilities.User;
+
+>>>>>>> 54540e4fad4024e5412ffe141953d140f5015be4
 /**
  * The Class DB. Encapsulates database MariaDB connection.
  */

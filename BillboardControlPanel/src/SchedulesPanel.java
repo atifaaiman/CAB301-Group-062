@@ -20,8 +20,8 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableModel;
 
-import common.Billboard;
-import common.Schedule;
+import utilities.Billboard;
+import utilities.Schedule;
 
 /**
  * The Class SchedulesPanel. Represents panel to display schedules.

@@ -1,12 +1,7 @@
-import static common.Message.GET_BILLBOARD;
+import static utilities.Message.GET_BILLBOARD;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.GridBagLayout;
-import java.awt.Image;
-import java.awt.Toolkit;
+import java.awt.*;
+import java.awt.event.*;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -22,12 +17,7 @@ import java.nio.file.Paths;
 import java.util.Base64;
 import java.util.Properties;
 
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.SwingConstants;
-import javax.swing.Timer;
+import javax.swing.*;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -38,13 +28,16 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import common.Billboard;
-import common.MessageBuilder;
+import utilities.Billboard;
+import utilities.MessageBuilder;
 
 /**
  * The Class GUI that encapsulates user interface for viewer.
  */
 public class GUI extends JFrame {
+
+
+
 
 	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = 1L;
@@ -90,11 +83,31 @@ public class GUI extends JFrame {
 	 * @param title the title
 	 * @param name  the name
 	 */
+
 	public GUI(String title, String name) {
 		super(title);
 		this.name = name;
 
 		mainPnl.setLayout(new GridBagLayout());
+
+
+		addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
+					System.exit(0);
+//					dispose();
+				}
+			}
+		});
+
+		addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				System.exit(0);
+			}
+		});
+
 
 		add(mainPnl, BorderLayout.CENTER);
 		JPanel pnlNorth = new JPanel();
@@ -106,7 +119,8 @@ public class GUI extends JFrame {
 		runServerConnectionTimer();
 
 		setUndecorated(true);
-		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+//		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		pack();
 		setLocationRelativeTo(null);
 		setExtendedState(MAXIMIZED_BOTH);
@@ -185,7 +199,7 @@ public class GUI extends JFrame {
 	public void updateBillboard(byte[] file, String filename) {
 		try {
 
-			
+
 			// Update billboard xml file. Updated file is stored
 			// in the root of the project.
 			Path xmlPath = Files.write(Paths.get(filename), file);
@@ -221,6 +235,11 @@ public class GUI extends JFrame {
 		doc.getDocumentElement().normalize();
 		return doc;
 	}
+
+//	@Override
+//	public MenuBar getMenuBar() {
+//		return super.getMenuBar();
+//	}
 
 	/**
 	 * Updates billboard.
@@ -353,7 +372,7 @@ public class GUI extends JFrame {
 	 * picture and the bottom of the screen.</li>
 	 * </ul>
 	 * </p>
-	 * 
+	 *
 	 * @param msgAttr true if message attribute is present, otherwise false
 	 * @param picAttr true if picture attribute is present, otherwise false
 	 * @param infAttr true if information attribute is present, otherwise false
@@ -525,3 +544,4 @@ public class GUI extends JFrame {
 	}
 
 }
+

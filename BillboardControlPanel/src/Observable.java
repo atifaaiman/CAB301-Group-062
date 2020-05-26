@@ -1,4 +1,4 @@
-import common.Message;
+import utilities.Message;
 
 /**
  * The Interface Observable.

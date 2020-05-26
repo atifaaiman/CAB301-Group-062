@@ -1,11 +1,12 @@
 package common;
 
-import org.junit.jupiter.api.Test;
 
-import static junit.framework.Assert.assertEquals;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 
 /**
@@ -16,7 +17,7 @@ class TestMessageBuilder {
 	/**
 	 * Test build (full method).
 	 */
-	@org.junit.jupiter.api.Test
+	@org.junit.Test
 	final void testBuild() {
 		byte[] file = new byte[4];
 		List<User> users = new ArrayList<>();

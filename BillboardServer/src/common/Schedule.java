@@ -213,6 +213,7 @@ public class Schedule implements Serializable {
 	public String getScheduleCreateDate() {
 		return scheduleCreateDate;
 	}
+
 	/**
 	 * Sets the date and time when the schedule was created.
 	 * @param  scheduleCreateDate date and time in a string format "YYYY-MM-dd HH-mm-ss"
@@ -221,6 +222,14 @@ public class Schedule implements Serializable {
 		this.scheduleCreateDate = scheduleCreateDate;
 	}
 
-
 	// Fernando Changes finish -----------------------------------
+
+
+	static public void main (String [] Args){
+		Schedule schedule = new Schedule();
+		schedule.setId(1);
+		schedule.setDuration(15);
+		System.out.println(schedule.getId());
+	}
+
 }

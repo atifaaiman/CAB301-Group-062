@@ -1,29 +1,17 @@
-import static common.Message.*;
+import common.*;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.math.BigInteger;
 import java.net.Socket;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.sql.SQLException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Timer;
-import java.util.TimerTask;
-import java.util.UUID;
+import java.util.*;
 
-import common.Billboard;
-import common.Message;
-import common.MessageBuilder;
-import common.Permission;
-import common.Schedule;
-import common.User;
+import static common.Message.*;
 
 /**
  * Listens the client requests. Every time the client sends {@link Message}},
@@ -388,8 +376,12 @@ public class ClientListener implements Runnable {
 		//if (msg.token() != null && tokenPermissionMap.get(msg.token()).equals("Edit Users")) {   			// Old code
 		if (msg.token() != null && tokenPermissionMap.get(msg.token()).getEdit_users().equals(true)) {		// New code
 
+			System.out.println("Token valid: " + msg.token());  // DEBUG FERNANDO *************************************
+
 			try {
 				User user = msg.user();
+
+				System.out.println("User information: " + user.getUsername() + ", " + user.getPassword()+ ", " + user.getPermission());  // DEBUG  FERNANDO
 
 				// Generate salt.
 				byte salt[] = new byte[16];
@@ -404,7 +396,9 @@ public class ClientListener implements Runnable {
 				user.setPassword(String.format("%032X", new BigInteger(1, hash)));
 
 				// First, try to add user (possible case when username already exists).
+				System.out.println("Calling DB.addUser...");  // DEBUG FERNANDO ******************************
 				DB.addUser(msg.user());
+				System.out.println("DB.addUser OK.");  // DEBUG FERNANDO ******************************
 
 				// If everything is OK, add salt to database in a separate table.
 				DB.addSalt(user.getUsername(), saltStr);

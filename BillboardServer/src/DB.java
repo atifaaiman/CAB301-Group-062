@@ -1,3 +1,8 @@
+import common.Billboard;
+import common.Schedule;
+import common.User;
+
+import javax.sql.rowset.serial.SerialBlob;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -5,22 +10,10 @@ import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Timestamp;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
-
-import javax.sql.rowset.serial.SerialBlob;
-
-import common.Billboard;
-import common.Schedule;
-import common.User;
 
 /**
  * The Class DB. Encapsulates database MariaDB connection.
@@ -170,7 +163,8 @@ public class DB {
 	public static void addUser(User user) throws SQLException {
 		//System.out.println("Method addUser: DB Class");
 		try (Connection conn = getConnection();
-				PreparedStatement stmt = conn.prepareStatement("insert into user value(?,?,?)")) {
+			 // PreparedStatement stmt = conn.prepareStatement("insert into user value(?,?,?)")) {   				// Old code
+				PreparedStatement stmt = conn.prepareStatement("insert into user value(?,?,?,?,?,?,?,?)")) {  	// New code
 			stmt.setString (1, user.getUsername());
 			stmt.setString (2, user.getPassword());
 			stmt.setString (3, user.getPermission());
@@ -374,7 +368,7 @@ public class DB {
 				PreparedStatement stmt = conn.prepareStatement(
 						//"insert into schedule (date_time, duration, `repeat`, name_billboard) value(?,?,?,?)")) {		// Old code
 			"insert into schedule (date_time, duration, `repeat`, name_billboard, date_time_start)," +
-					"date_time_finish, schedule_created_by, schedule_create_date value(?,?,?,?)")) {					// New code
+					"date_time_finish, schedule_created_by value(?,?,?,?)")) {					// New code
 			stmt.setTimestamp(1, Timestamp.valueOf(sched.getDateTime()));
 			stmt.setInt      (2, sched.getDuration());
 			stmt.setString   (3, sched.getRepeat());
@@ -382,7 +376,6 @@ public class DB {
 			stmt.setString   (5, sched.getDateTimeStart());												// New code
 			stmt.setString   (6, sched.getDateTimeFinish());												// New code
 			stmt.setString   (7, sched.getScheduleCreatedBy());											// New code
-			stmt.setString   (8, sched.getScheduleCreateDate());											// New code
 			stmt.executeUpdate();
 		}
 	}
